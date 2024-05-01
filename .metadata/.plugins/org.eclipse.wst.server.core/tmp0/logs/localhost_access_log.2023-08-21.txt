@@ -1,0 +1,12 @@
+127.0.0.1 - - [21/Aug/2023:21:06:50 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:21:06:50 +0530] "GET /FirstDynamic_Proj/ HTTP/1.1" 200 310
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:21:07:02 +0530] "GET /FirstDynamic_Proj/fs?nm=&pl= HTTP/1.1" 200 76
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:21:07:24 +0530] "GET /FirstDynamic_Proj/fs?nm=RaviShankar&pl=Bettiah HTTP/1.1" 200 94
+127.0.0.1 - - [21/Aug/2023:21:16:49 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:21:16:49 +0530] "GET /FsUsingAnno_Proj/ HTTP/1.1" 200 308
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:21:16:57 +0530] "GET /FsUsingAnno_Proj/fs?nm=RaviShankar&pl=Bettiah HTTP/1.1" 200 94
+127.0.0.1 - - [21/Aug/2023:23:30:48 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:23:30:48 +0530] "GET /FirstDynamic_Proj/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:23:31:07 +0530] "GET /FirstDynamic_Proj/fs?nm=Amisha&pl=Bihar HTTP/1.1" 200 87
+127.0.0.1 - - [21/Aug/2023:23:33:13 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [21/Aug/2023:23:33:13 +0530] "GET /FsUsingAnno_Proj/fs HTTP/1.1" 404 1032

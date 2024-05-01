@@ -1,0 +1,526 @@
+14-Aug-2023 22:42:46.737 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+ java.lang.UnsatisfiedLinkError: C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1857)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:197)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:106)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:564)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:551)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+14-Aug-2023 22:42:46.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.30
+14-Aug-2023 22:42:46.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 1 2015 22:30:46 UTC
+14-Aug-2023 22:42:46.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.30.0
+14-Aug-2023 22:42:46.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Aug-2023 22:42:46.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_202\jre
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_202-b08
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\conf\logging.properties
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\endorsed
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:42:46.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:42:46.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\temp
+14-Aug-2023 22:42:46.979 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 22:42:46.997 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["http-nio-8050"]
+ java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:340)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:742)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:458)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:120)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:568)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+14-Aug-2023 22:42:46.998 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8050]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8050]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:568)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:340)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:742)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:458)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:120)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 13 more
+
+14-Aug-2023 22:42:46.998 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 22:42:47.000 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["ajp-nio-8009"]
+ java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:340)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:742)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:458)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:568)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+14-Aug-2023 22:42:47.001 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[AJP/1.3-8009]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:568)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:851)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:576)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:962)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:340)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:742)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:458)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:960)
+	... 13 more
+
+14-Aug-2023 22:42:47.003 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 517 ms
+14-Aug-2023 22:42:47.028 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+14-Aug-2023 22:42:47.028 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.30
+14-Aug-2023 22:42:47.038 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1
+14-Aug-2023 22:42:47.135 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+14-Aug-2023 22:42:47.318 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1 has finished in 278 ms
+14-Aug-2023 22:42:47.318 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs
+14-Aug-2023 22:42:47.340 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs has finished in 22 ms
+14-Aug-2023 22:42:47.340 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples
+14-Aug-2023 22:42:47.718 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples has finished in 378 ms
+14-Aug-2023 22:42:47.719 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager
+14-Aug-2023 22:42:47.741 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager has finished in 23 ms
+14-Aug-2023 22:42:47.741 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager
+14-Aug-2023 22:42:47.764 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager has finished in 23 ms
+14-Aug-2023 22:42:47.764 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT
+14-Aug-2023 22:42:47.780 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT has finished in 16 ms
+14-Aug-2023 22:42:47.781 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui
+14-Aug-2023 22:42:47.803 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui has finished in 22 ms
+14-Aug-2023 22:42:47.807 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 803 ms
+14-Aug-2023 22:42:47.810 SEVERE [main] org.apache.catalina.core.StandardServer.await StandardServer.await: create[localhost:8005]: 
+ java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:420)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:713)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:659)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+
+14-Aug-2023 22:42:47.810 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 22:42:47.811 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 22:42:47.811 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+14-Aug-2023 22:42:47.831 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 22:42:47.831 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 22:42:47.832 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 22:42:47.832 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 22:43:34.608 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+ java.lang.UnsatisfiedLinkError: C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1857)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:197)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:106)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:564)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:551)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.30
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 1 2015 22:30:46 UTC
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.30.0
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_202\jre
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_202-b08
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:43:34.668 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:43:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\conf\logging.properties
+14-Aug-2023 22:43:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Aug-2023 22:43:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\endorsed
+14-Aug-2023 22:43:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:43:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:43:34.676 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\temp
+14-Aug-2023 22:43:34.778 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 22:43:34.932 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Aug-2023 22:43:34.932 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 22:43:34.932 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Aug-2023 22:43:34.932 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 523 ms
+14-Aug-2023 22:43:34.948 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+14-Aug-2023 22:43:34.948 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.30
+14-Aug-2023 22:43:34.958 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1
+14-Aug-2023 22:43:35.048 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+14-Aug-2023 22:43:35.128 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1 has finished in 170 ms
+14-Aug-2023 22:43:35.128 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs
+14-Aug-2023 22:43:35.153 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs has finished in 25 ms
+14-Aug-2023 22:43:35.153 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples
+14-Aug-2023 22:43:35.448 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples has finished in 295 ms
+14-Aug-2023 22:43:35.448 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager
+14-Aug-2023 22:43:35.478 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager has finished in 30 ms
+14-Aug-2023 22:43:35.478 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager
+14-Aug-2023 22:43:35.498 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager has finished in 20 ms
+14-Aug-2023 22:43:35.498 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT
+14-Aug-2023 22:43:35.518 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT has finished in 20 ms
+14-Aug-2023 22:43:35.518 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui
+14-Aug-2023 22:43:35.538 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui has finished in 20 ms
+14-Aug-2023 22:43:35.538 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 22:43:35.548 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 22:43:35.548 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 612 ms
+14-Aug-2023 22:57:02.016 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+ java.lang.UnsatisfiedLinkError: C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1857)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:197)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:106)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:564)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:551)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.30
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 1 2015 22:30:46 UTC
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.30.0
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_202\jre
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_202-b08
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\conf\logging.properties
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\endorsed
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 22:57:02.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\temp
+14-Aug-2023 22:57:02.173 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 22:57:02.316 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Aug-2023 22:57:02.316 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 22:57:02.316 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Aug-2023 22:57:02.316 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 478 ms
+14-Aug-2023 22:57:02.332 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+14-Aug-2023 22:57:02.332 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.30
+14-Aug-2023 22:57:02.348 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1
+14-Aug-2023 22:57:02.427 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+14-Aug-2023 22:57:02.516 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1 has finished in 168 ms
+14-Aug-2023 22:57:02.516 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs
+14-Aug-2023 22:57:02.523 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs has finished in 7 ms
+14-Aug-2023 22:57:02.523 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples
+14-Aug-2023 22:57:02.838 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples has finished in 315 ms
+14-Aug-2023 22:57:02.838 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager
+14-Aug-2023 22:57:02.854 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager has finished in 16 ms
+14-Aug-2023 22:57:02.854 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager
+14-Aug-2023 22:57:02.870 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager has finished in 16 ms
+14-Aug-2023 22:57:02.870 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT
+14-Aug-2023 22:57:02.901 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT has finished in 31 ms
+14-Aug-2023 22:57:02.901 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui
+14-Aug-2023 22:57:02.917 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui has finished in 16 ms
+14-Aug-2023 22:57:02.933 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 22:57:02.933 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 22:57:02.933 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 620 ms
+14-Aug-2023 23:07:11.534 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+ java.lang.UnsatisfiedLinkError: C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1857)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:197)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:106)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:564)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:551)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+14-Aug-2023 23:07:11.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.30
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 1 2015 22:30:46 UTC
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.30.0
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_202\jre
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_202-b08
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 23:07:11.596 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 23:07:11.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\conf\logging.properties
+14-Aug-2023 23:07:11.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Aug-2023 23:07:11.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\endorsed
+14-Aug-2023 23:07:11.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 23:07:11.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 23:07:11.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\temp
+14-Aug-2023 23:07:11.696 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 23:07:11.827 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Aug-2023 23:07:11.830 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 23:07:11.831 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Aug-2023 23:07:11.832 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 488 ms
+14-Aug-2023 23:07:11.849 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+14-Aug-2023 23:07:11.849 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.30
+14-Aug-2023 23:07:11.857 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1
+14-Aug-2023 23:07:11.955 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+14-Aug-2023 23:07:12.032 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1 has finished in 174 ms
+14-Aug-2023 23:07:12.032 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs
+14-Aug-2023 23:07:12.052 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs has finished in 20 ms
+14-Aug-2023 23:07:12.052 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples
+14-Aug-2023 23:07:12.360 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples has finished in 308 ms
+14-Aug-2023 23:07:12.360 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager
+14-Aug-2023 23:07:12.380 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager has finished in 20 ms
+14-Aug-2023 23:07:12.380 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager
+14-Aug-2023 23:07:12.403 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager has finished in 22 ms
+14-Aug-2023 23:07:12.403 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT
+14-Aug-2023 23:07:12.422 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT has finished in 19 ms
+14-Aug-2023 23:07:12.422 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui
+14-Aug-2023 23:07:12.442 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui has finished in 20 ms
+14-Aug-2023 23:07:12.444 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 23:07:12.449 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 23:07:12.451 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 619 ms
+14-Aug-2023 23:14:34.764 WARNING [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform]
+ java.lang.UnsatisfiedLinkError: C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\bin\tcnative-1.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1857)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:197)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:106)
+	at org.apache.catalina.connector.Connector.setProtocol(Connector.java:564)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:66)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:62)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1178)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(AbstractSAXParser.java:509)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(AbstractXMLDocumentParser.java:182)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(XMLDocumentFragmentScannerImpl.java:1339)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2784)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:602)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:505)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:842)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:771)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1451)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:551)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:310)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:484)
+
+14-Aug-2023 23:14:34.824 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.30
+14-Aug-2023 23:14:34.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 1 2015 22:30:46 UTC
+14-Aug-2023 23:14:34.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.30.0
+14-Aug-2023 23:14:34.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Aug-2023 23:14:34.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Aug-2023 23:14:34.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Aug-2023 23:14:34.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_202\jre
+14-Aug-2023 23:14:34.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_202-b08
+14-Aug-2023 23:14:34.825 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Aug-2023 23:14:34.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 23:14:34.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 23:14:34.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\conf\logging.properties
+14-Aug-2023 23:14:34.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Aug-2023 23:14:34.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\endorsed
+14-Aug-2023 23:14:34.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 23:14:34.826 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30
+14-Aug-2023 23:14:34.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\temp
+14-Aug-2023 23:14:34.930 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 23:14:35.081 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Aug-2023 23:14:35.082 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 23:14:35.085 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+14-Aug-2023 23:14:35.085 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 505 ms
+14-Aug-2023 23:14:35.106 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+14-Aug-2023 23:14:35.106 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.30
+14-Aug-2023 23:14:35.114 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1
+14-Aug-2023 23:14:35.215 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [4.0]. Default version will be used.
+14-Aug-2023 23:14:35.294 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\basic1 has finished in 180 ms
+14-Aug-2023 23:14:35.294 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs
+14-Aug-2023 23:14:35.314 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\docs has finished in 20 ms
+14-Aug-2023 23:14:35.314 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples
+14-Aug-2023 23:14:35.623 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\examples has finished in 309 ms
+14-Aug-2023 23:14:35.623 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager
+14-Aug-2023 23:14:35.645 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\host-manager has finished in 22 ms
+14-Aug-2023 23:14:35.646 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager
+14-Aug-2023 23:14:35.667 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\manager has finished in 21 ms
+14-Aug-2023 23:14:35.667 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT
+14-Aug-2023 23:14:35.688 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ROOT has finished in 21 ms
+14-Aug-2023 23:14:35.689 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui
+14-Aug-2023 23:14:35.708 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\Users\RAVISHANKAR\OneDrive\Desktop\J2EE JDBC\Servlate\apache-tomcat-8.0.30-windows-x86\apache-tomcat-8.0.30\webapps\ui has finished in 19 ms
+14-Aug-2023 23:14:35.710 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8050"]
+14-Aug-2023 23:14:35.716 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+14-Aug-2023 23:14:35.717 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 632 ms
+14-Aug-2023 23:15:36.257 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/basic1]
